@@ -44,13 +44,6 @@ function Board(props) {
         return col;
     }
 
-    // rowHandler(){
-    //     let squares = nums.map((e)=>{
-    //         return this.renderSquare(e);
-    //     });
-    //     return squares;
-    // }
-
     for (let j = 0; j < 8; j+=3){
         rows.push(<div key={j} className="board-row">{renderSquare(j)}</div>)
     }
